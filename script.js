@@ -1,19 +1,30 @@
-// Login et mot de passe
+// Identifiants
 const LOGIN = "slime";
 const PASSWORD = "1234";
 
-function login() {
+// Sélection des éléments
+const loginBox = document.getElementById("loginBox");
+const content = document.getElementById("content");
+const loginBtn = document.getElementById("loginBtn");
+const errorMsg = document.getElementById("error");
+
+const btn = document.getElementById("btn");
+const message = document.getElementById("message");
+
+// Fonction login
+loginBtn.addEventListener("click", () => {
     const user = document.getElementById("username").value;
     const pass = document.getElementById("password").value;
-    const error = document.getElementById("error");
 
     if(user === LOGIN && pass === PASSWORD){
-        // Masquer la login-box
-        document.getElementById("loginBox").style.display = "none";
-        // Afficher le contenu
-        document.getElementById("content").style.display = "block";
+        loginBox.style.display = "none";
+        content.style.display = "block";
     } else {
-        error.textContent = "❌ Login ou mot de passe incorrect !";
-        error.style.color = "red";
+        errorMsg.textContent = "❌ Login ou mot de passe incorrect !";
     }
-}
+});
+
+// Exemple de bouton interactif sur le site
+btn.addEventListener("click", () => {
+    message.textContent = "Bravo 🎉 Tu as cliqué !";
+});
