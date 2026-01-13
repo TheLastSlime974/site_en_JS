@@ -2,20 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon site</title>
+    <title>Mon site sécurisé</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script>
-let code = prompt("Entrez le code d'accès :");
 
-if (code !== "1234") {  // ici ton code secret
-    alert("Accès refusé !");
-    window.location.href = "https://google.com"; // redirige
-}
-</script>
+    <h1>🎉 Bienvenue sur mon site !</h1>
+    <p id="message">Clique sur le bouton ci-dessous pour voir un message.</p>
+    <button id="btn">Clique-moi</button>
 
-<h1>🎉 Mon site est en ligne !</h1>
-<p>Bravo, ça fonctionne 🚀</p>
-
+    <script src="script.js"></script>
 </body>
 </html>
