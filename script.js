@@ -1,8 +1,19 @@
-// Sélection des éléments
-const bouton = document.getElementById("btn");
-const message = document.getElementById("message");
+// Login et mot de passe
+const LOGIN = "slime";
+const PASSWORD = "1234";
 
-// Action au clic
-bouton.addEventListener("click", () => {
-    message.textContent = "Bravo 🎉 Tu utilises JavaScript !";
-});
+function login() {
+    const user = document.getElementById("username").value;
+    const pass = document.getElementById("password").value;
+    const error = document.getElementById("error");
+
+    if(user === LOGIN && pass === PASSWORD){
+        // Masquer la login-box
+        document.getElementById("loginBox").style.display = "none";
+        // Afficher le contenu
+        document.getElementById("content").style.display = "block";
+    } else {
+        error.textContent = "❌ Login ou mot de passe incorrect !";
+        error.style.color = "red";
+    }
+}
