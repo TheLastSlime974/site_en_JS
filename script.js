@@ -62,10 +62,15 @@ btn.addEventListener("click", () => {
         scoreDisplay.textContent = `Score : ${score}`;
 
         // Déplacer le bouton aléatoirement
-        const x = Math.floor(Math.random() * (window.innerWidth - btn.offsetWidth));
-        const y = Math.floor(Math.random() * (window.innerHeight - btn.offsetHeight - 50));
+        const maxX = window.innerWidth - btn.offsetWidth;
+        const maxY = window.innerHeight - btn.offsetHeight - 50; // éviter le bas de la page
+
+        const x = Math.floor(Math.random() * maxX);
+        const y = Math.floor(Math.random() * maxY);
+
         btn.style.position = "absolute";
         btn.style.left = x + "px";
         btn.style.top = y + "px";
     }
 });
+
