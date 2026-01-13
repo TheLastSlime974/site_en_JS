@@ -33,7 +33,7 @@ body {
     display: none; /* caché par défaut */
 }
 
-button#btn {
+#btn {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -44,6 +44,6 @@ button#btn {
     margin-top: 20px;
 }
 
-button#btn:hover {
+#btn:hover {
     background-color: #0b7dda;
 }
