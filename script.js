@@ -1,8 +1,11 @@
-// Identifiants
-const LOGIN = "slime";
-const PASSWORD = "1234";
+// ---- CONFIGURATION ----
+// Change ici ton login et ton mot de passe
+const CREDENTIALS = {
+    login: "slime",
+    password: "1234"
+};
+// -----------------------
 
-// Sélection des éléments
 const loginBox = document.getElementById("loginBox");
 const content = document.getElementById("content");
 const loginBtn = document.getElementById("loginBtn");
@@ -16,7 +19,7 @@ loginBtn.addEventListener("click", () => {
     const user = document.getElementById("username").value;
     const pass = document.getElementById("password").value;
 
-    if(user === LOGIN && pass === PASSWORD){
+    if(user === CREDENTIALS.login && pass === CREDENTIALS.password){
         loginBox.style.display = "none";
         content.style.display = "block";
     } else {
@@ -24,7 +27,7 @@ loginBtn.addEventListener("click", () => {
     }
 });
 
-// Exemple de bouton interactif sur le site
+// Bouton interactif
 btn.addEventListener("click", () => {
     message.textContent = "Bravo 🎉 Tu as cliqué !";
 });
