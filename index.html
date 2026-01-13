@@ -7,20 +7,24 @@
 </head>
 <body>
 
+<!-- Formulaire de connexion -->
 <div class="login-box" id="loginBox">
     <h2>Connexion 🔐</h2>
 
     <input type="text" id="username" placeholder="Login">
     <input type="password" id="password" placeholder="Mot de passe">
 
-    <button onclick="login()">Se connecter</button>
+    <button id="loginBtn">Se connecter</button>
 
     <p id="error"></p>
 </div>
 
+<!-- Contenu du site (caché au départ) -->
 <div class="content" id="content">
     <h1>🎉 Bienvenue sur le site !</h1>
     <p>Accès autorisé ✅</p>
+    <button id="btn">Clique-moi</button>
+    <p id="message"></p>
 </div>
 
 <script src="script.js"></script>
