@@ -30,7 +30,7 @@ body {
 }
 
 .content {
-    display: none; /* Caché par défaut */
+    display: none; /* caché par défaut */
 }
 
 button#btn {
