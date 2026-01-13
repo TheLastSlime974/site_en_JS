@@ -2,15 +2,27 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon site sécurisé</title>
+    <title>Connexion</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>🎉 Bienvenue sur mon site !</h1>
-    <p id="message">Clique sur le bouton ci-dessous pour voir un message.</p>
-    <button id="btn">Clique-moi</button>
+<div class="login-box" id="loginBox">
+    <h2>Connexion 🔐</h2>
 
-    <script src="script.js"></script>
+    <input type="text" id="username" placeholder="Login">
+    <input type="password" id="password" placeholder="Mot de passe">
+
+    <button onclick="login()">Se connecter</button>
+
+    <p id="error"></p>
+</div>
+
+<div class="content" id="content">
+    <h1>🎉 Bienvenue sur le site !</h1>
+    <p>Accès autorisé ✅</p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
