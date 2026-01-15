@@ -2,29 +2,23 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mini-jeu sécurisé</title>
+    <title>Login simple</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Formulaire de login -->
-<div class="login-box" id="loginBox">
-    <h2>Connexion 🔐</h2>
-    <input type="text" id="username" placeholder="Login">
-    <input type="password" id="password" placeholder="Mot de passe">
-    <button id="loginBtn">Se connecter</button>
-    <p id="error"></p>
-</div>
+    <h1>Connexion</h1>
 
-<!-- Contenu du site (caché par défaut) -->
-<div class="content" id="content">
-    <h1>🎮 Mini-jeu : Clique sur le bouton !</h1>
-    <p id="timer">Temps restant : 10</p>
-    <p id="score">Score : 0</p>
-    <button id="btn">Clique-moi</button>
+    <input type="text" id="login" placeholder="Login">
+    <br><br>
+
+    <input type="password" id="mdp" placeholder="Mot de passe">
+    <br><br>
+
+    <button id="btnLogin">Se connecter</button>
+
     <p id="message"></p>
-</div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
