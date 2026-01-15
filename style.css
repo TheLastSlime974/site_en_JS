@@ -1,51 +1,22 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f2f2f2;
     text-align: center;
-    margin: 0;
-    position: relative; /* IMPORTANT pour que le bouton se déplace */
-    height: 100vh;      /* Pour que le bouton reste à l’écran */
-    overflow: hidden;    /* Empêche de créer des scrollbars quand le bouton bouge */
-}
-.login-box {
-    background: white;
-    display: inline-block;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #ccc;
+    margin-top: 60px;
 }
 
-.login-box input {
-    display: block;
-    margin: 10px auto;
+input {
     padding: 10px;
+    font-size: 16px;
     width: 200px;
 }
 
-.login-box button {
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-#loginBox #error {
-    color: red;
-}
-
-.content {
-    display: none; /* caché par défaut */
-}
-
-#btn {
+button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #2196F3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
 }
 
-#btn:hover {
-    background-color: #0b7dda;
+#message {
+    margin-top: 20px;
+    font-weight: bold;
 }
