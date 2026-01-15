@@ -9,7 +9,6 @@ const utilisateurs = [
 const btnLogin = document.getElementById("btnLogin");
 const message = document.getElementById("message");
 
-// Quand on clique sur le bouton
 btnLogin.addEventListener("click", function () {
 
     const loginEntre = document.getElementById("login").value;
@@ -30,8 +29,12 @@ btnLogin.addEventListener("click", function () {
 
     // Résultat
     if (connecte) {
-        message.textContent = "✅ Connexion réussie";
+        message.textContent = "✅ Connexion réussie ! Redirection...";
         message.style.color = "green";
+        // Redirection vers la page du portail après 1 seconde
+        setTimeout(function(){
+            window.location.href = "portail.html";
+        }, 1000);
     } else {
         message.textContent = "❌ Login ou mot de passe incorrect";
         message.style.color = "red";
